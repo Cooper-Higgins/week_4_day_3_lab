@@ -15,11 +15,7 @@ author_repository.save(author_2)
 
 author_repository.select_all()
 
-book_1 = Book("The Book Thief", "Historical Fiction")
+book_1 = Book("The Book Thief", "Historical Fiction", author_1)
 book_repository.save(book_1)
-
-book_2 = Book("Reimagining Capitalism in a World on Fire", "Sustainability")
+book_2 = Book("Reimagining Capitalism in a World on Fire", "Sustainability", author_2)
 book_repository.save(book_2)
-
-
-pdb.set_trace()

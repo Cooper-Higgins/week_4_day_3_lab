@@ -32,7 +32,7 @@ def select(id):
     result = run_sql(sql, values)[0]
 
     if result is not None:
-        author = author(result['first_name'], result['last_name'], result['id'])
+        author = Author(result['first_name'], result['last_name'], result['id'])
     return author
 
 
